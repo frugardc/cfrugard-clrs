@@ -18,12 +18,15 @@ class Sort
 		return arr
 	end
 
-	def self.linear_search(arr,value)
+	def self.linear_search(array,value)
 		index = 0
-		while index < arr.size - 1 and arr[index] != value
-			index +=1
+		while index < array.size
+			if array[index] == value
+				return index
+			end
+			index += 1
 		end
-		return index
+		return nil 
 	end
 
 end
