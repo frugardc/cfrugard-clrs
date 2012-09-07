@@ -5,15 +5,11 @@ class Sort
 			i = index - 1
 			puts "Before WHILE for #{key} - " + arr.join(",")
 			while i > -1 and arr[i] > key
-				puts "Since the key (#{key}) is less than the element to it's left (#{arr[i]})"
 				arr[i + 1] = arr[i]
-				puts "replace the key to the right with the key to the left"
 				i = i - 1
 				puts arr.join(",")
 			end
 			arr[i + 1] = key
-			puts arr.join(",")
-			puts "----"
 		end
 		return arr
 	end
